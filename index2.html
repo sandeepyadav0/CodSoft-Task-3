@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Webpage</title>
+  <style>
+    /* Add some basic styling */
+    nav {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+    }
+
+    section {
+      margin-bottom: 20px;
+    }
+
+    article {
+      border: 1px solid #ccc;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Custom Header</h1>
+  </header>
+
+  <nav>
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+    <a href="#">Link 4</a>
+  </nav>
+
+  <main>
+    <section id="section1">
+      <h2>Section 1</h2>
+      <article id="article1">
+        <h3>Article 1</h3>
+        <p id="text1">This is the content of article 1.</p>
+        <img id="image1" src="image1.jpg" alt="Image 1">
+      </article>
+    </section>
+
+    <section id="section2">
+      <h2>Section 2</h2>
+      <article id="article2">
+        <h3>Article 2</h3>
+        <p id="text2">This is the content of article 2.</p>
+        <img id="image2" src="image2.jpg" alt="Image 2">
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <p>Custom Footer</p>
+  </footer>
+
+  <script>
+    // Dynamically change the heading text in Section 1
+    var heading1 = document.querySelector('#section1 h2');
+    heading1.textContent = 'New Heading for Section 1';
+
+    // Change the font color and size of paragraph text in Article 1
+    var paragraph1 = document.querySelector('#article1 p');
+    paragraph1.style.color = 'blue';
+    paragraph1.style.fontSize = '18px';
+
+    // Change the image source and alt text in Article 2
+    var image2 = document.querySelector('#image2');
+    image2.src = 'image3.jpg';
+    image2.alt = 'Image 3';
+  </script>
+</body>
+</html>
